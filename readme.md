@@ -26,14 +26,15 @@
 OK !
 
 **说明**
-> 一定要修改deploy.xml然后commit, 系统会检测到Actions，然后加入到定时任务中，否则不会触发定时
-> Github Actions的配置文件(.github/workflows/deploy.yml)中配置了时间 
+> 1.一定要修改deploy.xml然后commit, 系统会检测到Actions，然后加入到定时任务中，否则不会触发定时
+> 
+> 2. Github Actions的配置文件(.github/workflows/deploy.yml)中配置了时间 
 默认是每天北京时间10:00 可以自行修改
 >
-> Github Action服务器时间为UTC格式,比北京晚8个小时;
+> 3. Github Action服务器时间为UTC格式,比北京晚8个小时;
 > 除此之外，它要慢几分钟(5分钟左右), 自己测试时多等待5分钟左右
 > 
-> 运行日志去 Action下面查看
+> 4. 运行日志去 Action下面查看
 
 
 
