@@ -25,7 +25,7 @@
 * 编辑: .github/workflows/deploy.yml 随便修改点什么,例如修改时间或者加个注释，然后commit // **Important!**
 OK !
 
-***说明**
+**说明**
 > 一定要修改deploy.xml然后commit, 系统会检测到Actions，然后加入到定时任务中，否则不会触发定时
 > Github Actions的配置文件(.github/workflows/deploy.yml)中配置了时间 
 默认是每天北京时间10:00 可以自行修改
