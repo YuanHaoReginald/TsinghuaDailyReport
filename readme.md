@@ -23,7 +23,8 @@
 * 进入: Actions 点击 Understand  // **Important!**
 ![Understand](https://github.com/naihaishy/TsinghuaDailyReport/blob/master/results/d.png)
 * 编辑: .github/workflows/deploy.yml 随便修改点什么,例如修改时间或者加个注释，然后commit // **Important!**
-OK !
+
+**OK !**
 
 **说明**
 > 1.一定要修改deploy.xml然后commit, 系统会检测到Actions，然后加入到定时任务中，否则不会触发定时
