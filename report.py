@@ -42,17 +42,23 @@ class Report(object):
 
         self.form_data = None
 
-    def run(self):
+    def run(self, max_retry=3):
         try:
             self.__login()
         except Exception as e:
             print("登录失败", e)
+            print("重新登录中...")
+            if max_retry > 0:
+                return self.run(max_retry - 1)
         try:
             self.__get_server_info()
             self.__get_data()
             self.__submit_report()
         except Exception as e:
             print("提交失败", e)
+            print("重试中...")
+            if max_retry > 0:
+                return self.run(max_retry - 1)
 
     def __login(self):
         """登录 获取cookie"""
