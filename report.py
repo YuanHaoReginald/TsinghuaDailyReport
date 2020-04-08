@@ -53,8 +53,6 @@ class Report(object):
             self.__submit_report()
         except Exception as e:
             print("提交失败", e)
-            print("重试中...")
-            self.run()
 
     def __login(self):
         """登录 获取cookie"""
